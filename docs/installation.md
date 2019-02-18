@@ -49,6 +49,7 @@ composer create-project yii2-starter-kit/yii2-starter-kit myproject.com
  * - docker host IP address may vary on Windows and MacOS systems
  
 *PS* Also you can use bash inside application container. To do so run `docker-compose exec app bash`
+*PS* To start fresh docker run ``docker-compose down --volumes --remove-orphans && docker system prune -a``
 
 ### Docker FAQ
 1. How do i run yii console commands from outside a container?
