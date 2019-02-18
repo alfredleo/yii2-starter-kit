@@ -6,7 +6,12 @@ To run tests:
 docker-compose up -d
 ```
 2. Create `tests` database:
+Windows
+``` cmd
+docker-compose exec db mysql -uroot -proot -e "CREATE DATABASE `yii2-starter-kit-test` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci" 
 ```
+Linux
+``` bash
 docker-compose exec db mysql -uroot -proot -e "CREATE DATABASE \`yii2-starter-kit-test\` CHARACTER SET utf8mb4 COLLATE utf8mb4_unicode_ci" 
 ```
 3. Build needed files
